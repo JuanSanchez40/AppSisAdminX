@@ -1,0 +1,16 @@
+/* styles.css */
+.custom-menu-item {
+    opacity: 1;
+    transform: none;
+    min-width: 329px;
+    transition: opacity 322ms cubic-bezier(0.4, 0, 0.2, 1),
+                transform 214ms cubic-bezier(0.4, 0, 0.2, 1);
+    left: 881px;
+    transform-origin: 127px 0px;
+    position: absolute; /* Asumiendo que necesitas posicionamiento absoluto */
+}
+
+.color-checkbox {
+    color: blue;
+}
+  
