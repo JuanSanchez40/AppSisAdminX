@@ -30,7 +30,7 @@ const Reporte = () => {
 
   const getsTickets = async () => {
     const tiposTickets = await axios.get(
-      `http://localhost:9000/api/empresa-x-reportes/tipos-tickets?`,
+      `https://apispringbootrtx.onrender.com/api/empresa-x-reportes/tipos-tickets?`,
       {
         responseType: "json",
       }
@@ -81,7 +81,7 @@ const Reporte = () => {
     }
 
     try {
-    const urls = `http://localhost:9000/api/empresa-x-reportes/obtener-reporte-tickets?fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`;
+    const urls = `https://apispringbootrtx.onrender.com/api/empresa-x-reportes/obtener-reporte-tickets?fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`;
 
     const response = await axios.post(urls, 
       selectedOptions,
